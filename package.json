@@ -1,23 +1,23 @@
 {
   "name": "api_node",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
+  "description": "Criação de uma API utilizando Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BrunoSorrilha/API_Node.git"
+    "url": "git+https://github.com/ProfAndersonVanin/api_node.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BrunoSorrilha/API_Node/issues"
+    "url": "https://github.com/ProfAndersonVanin/api_node/issues"
   },
-  "homepage": "https://github.com/BrunoSorrilha/API_Node#readme",
+  "homepage": "https://github.com/ProfAndersonVanin/api_node#readme",
   "dependencies": {
     "@prisma/client": "^6.13.0",
     "express": "^5.1.0"
