@@ -7,6 +7,35 @@ const prisma = new PrismaClient()
 const app = express()
 app.use(express.json())
 
+app.put('/cadastro/:id', async (req,res)=>{
+
+    //console.log(req.params.id)
+    await prisma.usuario.update({
+        where:{
+            id:req.params.id
+        },
+        data:{
+            email: req.body.email,
+            name: req.body.name,
+            idade: req.body.idade
+        }
+    })
+
+
+    res.status(201).json({"message":"Usuario atualizado"})
+})
+
+app.delete('/cadastro/:id', async (req,res)=>{
+
+    await prisma.usuario.delete({
+        where:{
+            id:req.params.id
+        },
+    })
+
+    res.status(201).json({"message":"Usuario apagado"})
+})
+
 
 app.post('/cadastro', async (req,res)=>{
 
